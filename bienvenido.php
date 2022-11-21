@@ -19,6 +19,7 @@ $usuarioLoggeado = $usuariosPosibles[$userNum - 1];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página | Bienvenido 👋🏻</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -29,8 +30,11 @@ $usuarioLoggeado = $usuariosPosibles[$userNum - 1];
         </form>
     </header>
     <div class="container shadow welcome-container">
-        <h2>Tu perfil</h2>
-        <p>Nos complace tenerte de vuelta por aquí, <?= $usuarioLoggeado->getNombre() ?></p>
+        <div class="saludo">
+            <h2>Tu perfil</h2>
+            <p>Hola!👋🏻</p>
+            <p>Nos complace tenerte de vuelta por aquí, <?= $usuarioLoggeado->getNombre() ?>.</p>
+        </div>
         <hr>
         <div class="hobbies">
             <h3>Tus hobbies:</h3>
