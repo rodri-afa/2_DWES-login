@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mi página | Login</title>
+    <script src="https://unpkg.com/phosphor-icons"></script><!--  librería de iconos -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://unpkg.com/phosphor-icons"></script><!--  librería de iconos -->
 
 </head>
 
@@ -20,7 +20,7 @@
             <input id="nombre" type="text" name="nombre" required>
 
             <label for="passwd">Contraseña:</label>
-            <input id="passwd" type="text" name="passwd" required>
+            <input id="passwd" type="password" name="passwd" required>
 
             <?php
             if ($_GET['error'] == true) {
